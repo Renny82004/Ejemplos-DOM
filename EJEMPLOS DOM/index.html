@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Propagación de Eventos</title>
+</head>
+<body>
+    <h1>Propagación de Eventos</h1>
+    <form action="" id="form">
+        <div>
+            <input type="text" name="" id="curso">curso
+        </div>
+        <div>
+            <input type="text" name="" id="duracion">Duracion
+        </div>
+        <div>
+            <input type="checkbox" name="" id="chk">Cambiar
+        </div>
+
+        <button type="submit">Ejemplo 1</button>
+    </form>
+    <Script>
+        for (let elemento of document.querySelectorAll)('*'){
+            elemento.addEventListener('click',mostrar);
+        };
+        function mostrar (e) {
+            console.log(this.tagName);
+            console.log(e.target.tagName);
+        }
+    </Script>
+    
+</body>
+</html>
+<!--Este ejemplo los que hace es mostrar el elemento al dar click en el-->

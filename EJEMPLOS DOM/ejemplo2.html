@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Ejemplo 2</title>
+</head>
+<body>
+    <div class="box" id="hide_1">elemento 1</div>
+    <div class="box" id="hide_2">elemento 2</div>
+    <div class="box" id="hide_3">elemento 3</div>
+    <script>
+        const hider = document.querySelectorAll('.box');
+        hider.forEach(hide =>{
+          hide.assEventListener('dblcclick', function(event){
+            event.target.style.display="none";
+          });
+        });
+    </script>
+</body>
+</html>
+<!--Este ejemplo sirve para ocultar el elemento al hacer doble clik en dicho elemento-->

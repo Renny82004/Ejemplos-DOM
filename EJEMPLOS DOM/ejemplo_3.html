@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Ejemplo 3</title>
+</head>
+<body>
+    <div id="outer">
+        <button id="inner"> Por favor selecciona en este lugar</button>
+    </div>
+    <Script>
+    const outer = document.getElementById('outer');
+    const inner = document.getElementById('inner');
+
+    outer.addEventListener('click', function(event) {
+        console.log('Evento dentro del elemento exterior (outer)');
+    });
+    
+    inner.addEventListener('click', function(event) {
+        console.log('Evento dentro del elemento interior (inner)');
+    });
+</script>
+
+
+    </Script>
+</body>
+</html>
+<!--Este ejemplo muestra la información al hacer clic en el lugar indicado por un 
+lado muestra que evento se usó en el click interno y el otro que evento se utilizó en el click externo-->
